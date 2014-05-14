@@ -7,6 +7,8 @@ Number.prototype.count = function(){
       array.push("FizzBuzz");
     } else if(i % 5 === 0){
       array.push("Buzz");
+    } else if(i % 3 === 0){
+      array.push("Fizz");
     } else {
       array.push(i);
     };
