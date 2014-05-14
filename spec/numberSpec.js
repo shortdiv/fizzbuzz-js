@@ -10,4 +10,11 @@ describe("Number", function(){
     var array = number.count();
     expect(array[4]).toBe("Buzz");
   });
+
+  it("should return fizz for multiples of 3", function(){
+    var number = new Number();
+    var array = number.count();
+    expect(array[2]).toBe("Fizz");
+  });
+
 });
