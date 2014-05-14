@@ -1,20 +1,7 @@
 describe("Number", function(){
-  it ("should return fizzbuzz for the 15th number", function(){
-    var hundreds = new Number();
-    var array = hundreds.count();
-    expect(array[14]).toBe("FizzBuzz");
-  });
 
-  it("should return buzz for multiples of 5", function(){
-    var number = new Number();
-    var array = number.count();
-    expect(array[4]).toBe("Buzz");
-  });
-
-  it("should return fizz for multiples of 3", function(){
-    var number = new Number();
-    var array = number.count();
-    expect(array[2]).toBe("Fizz");
+  it("should check if a number is divisible by 15", function(){
+    expect(is_fizzbuzz(45)).toBe(true);
   });
 
 });
