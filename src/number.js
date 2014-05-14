@@ -1,5 +1,11 @@
 function Number(){};
 
 Number.prototype.count = function(){
-  return 100;
+  var array = [];
+  for(var i=1; i<=100;i++){
+    if (i % 15 === 0){
+      array.push("FizzBuzz");
+    };
+  };
+  return array.length;
 }
