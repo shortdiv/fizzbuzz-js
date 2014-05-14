@@ -1,7 +1,8 @@
 describe("Number", function(){
-  it ("should return 6 fizzbuzzes", function(){
+  it ("should return fizzbuzz for the 15th number", function(){
     var hundreds = new Number();
-    expect(hundreds.count()).toBe(6);
+    var array = hundreds.count()
+    expect(array[14]).toBe("FizzBuzz");
 
   })
 });
